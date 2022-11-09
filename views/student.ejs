@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- head tag -->
+    <%- include('./partials/head.ejs') %>   
+<body>
+    <!-- nav bar -->
+    <%- include('./partials/nav.ejs') %>   
+
+
+    <div class="container-fluid student content text-center">
+        <h2 style="margin-left: -104px;" >Students Data Collection</h2>
+        <!-- <p>student section</p> -->
+        
+    </div>
+
+    <div class="container base content">
+        <% if (datas.length > 0 ) { %>
+            <% datas.forEach(data => { %>
+             <div class="text-center student3">
+                <a href="/datas/<%= data._id %>">
+                    <div><span>Fullname:</span> <span class="s1"><span><%= data.FULLNAME %></span></span></div>
+                    <div><span>Email:</span> <span class="s2"><%= data.EMAIL %></span></div>
+                    <div><span>Phone Number:</span> <span class="s3"><%= data.PHONE %></span></div>
+                    <div><span>Registration Fee:</span> <%= data.FEE %></div>
+                    <div><span>Course:</span> <%= data.COURSE %></div>
+                    <div><span>Outstanding Payment:</span><span class="s4"> <%= data.OUTSTANDING %></span></div>
+                </a>
+             </div>
+            <% }) %>
+        <% } else { %>
+            <p>There is no data on display....</p>
+        <% } %>
+    </div>
+
+    <!-- footer -->
+    <%- include('./partials/footer.ejs') %>   
+</body>
+</html>

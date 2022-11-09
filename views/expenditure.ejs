@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- head -->
+    <%- include('./partials/head.ejs') %>     
+</head>
+<body style=" 
+    background:	white;
+    background-image:url();
+    background-size: cover;
+    background-position: center ; 
+    background-attachment:fixed;
+    background-repeat: no-repeat;">
+     <!-- nav bar -->
+     <%- include('./partials/nav.ejs') %>
+
+     <!-- <div class="text-center ">
+        <p style="font-size:1.5em;">requsition Collection</p>
+     </div> -->
+
+     <div class="base content">
+        <!-- <h2>Data Collections</h2> -->
+                
+        <div class="">
+            
+            <% if (datas.length > 0 ) { %>
+                <% datas.forEach(data => { %>
+                  <div class="text- student4">
+                    <p class="d-flex"><span class="fw-bold text-end ps-2">NAME: </span><span><%= data.name %></span></p>
+                    <p class="d-flex"><span class="fw-bold text-end ps-2">ITEM: </span><span><%= data.item %></span></p>
+                    <p class="d-flex"><span class="fw-bold text-end ps-2">DISCRIPTION: </span><span><%= data.discription %></span></p>
+                    <p class="d-flex"><span class="fw-bold text-end ps-2">UNIT PRICE: </span><span><%= data.unit %></span></p> 
+                    <p class="d-flex"><span class="fw-bold text-end ps-2">QUANTITY: </span><span><%= data.quantity %></span></p>   
+                    <p class="d-flex"><span class="fw-bold text-end ps-2">TOTAL AMOUNT: </span><span><%= data.total %></span></p> 
+                    </div>              
+                <% }) %>
+            <% } else { %>
+                <p>There is no requsition data on display....</p>
+            <% } %>
+            <!-- change section -->
+            
+
+
+        </div>
+    </div>
+    <!-- table sample -->
+    <!-- <table id="show">
+        <tr id="fish">
+          <th class="fname">FULLNAME</th>
+          <th class="ename">EMAIL </th>
+          <th class="pname">PHONE NO</th>
+          <th class="rname">ENTRY REASON</th>
+          <th class="feename">REG FEE</th>
+          <th class="sname">STATE</th>
+          <th></th>
+        </tr>                                                                      
+      </table> -->
+
+
+
+
+    <!-- footer -->
+    <%- include('./partials/footer.ejs') %> 
+</body>
+</html>

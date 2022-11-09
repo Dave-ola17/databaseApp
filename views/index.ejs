@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- head tag -->
+    <%- include('./partials/head.ejs') %>   
+<body>
+    <!-- nav tag -->
+    <%- include('./partials/nav.ejs') %> 
+
+   <div class="container-fluid px-5 py-5 rounded-3">
+        <div class="container d-flex justify-content-between">
+            <div>
+                <div>
+                    <h2 class="display-4" style="font-weight:700;">Discover new and exciting ways to enrich your coding skills anytime & anyware</h2>
+                </div>
+                <div>
+                    <p style="font-size: 20px;">Education begins in preparatory, but it never ends... <br>
+                    With <mark>Software</mark> development skills, you have the power to rule the world.</p>
+                </div>
+                <div class="mt-5">
+                    <button class="btn btn-lg btn-outline-secondary btn-primary text-light"><a class="text-light" href="/base/create">Enroll Now!</a></button>
+                </div>
+            </div>
+            <div>
+                <img class="tec" src="/tecbro.jpg" alt="">
+            </div>
+        </div>
+        <div class="text-center pb-5 mt-5">
+            <p class="display-6 fw-bolder">Soft-app ensures your satisfaction</p>
+        </div>
+        <!-- cards section1 -->
+        <div class="d-flex pt-5 justify-content-between">
+           <div>            
+             <img src="/teacher.jpg" class="img1" alt="">
+             <h3 class="fw-bolder text-center mt-2">Professional Instructors</3>
+           </div>
+            <div class="">
+                <img class="img1" src="/learn.jpg"> 
+                <h3 class="fw-bolder text-center mt-2">Online Learning</3>               
+            </div>
+            <div class="">
+                <img class="img1" src="/certificate.jpg">  
+                <h3 class="fw-bolder text-center mt-2">Certification</3>                
+            </div>
+        </div>
+
+         <!-- online learning section -->
+         <div class="online container-fluid my-5">
+            <div>
+                <img class="i1" src="/f3.jpg" alt="">
+            </div>
+            <div class="online2">
+                <h3 class="my-3">Attend Every Class No Matter Your Location or Schedule</h3>
+                <p>
+                    Our online classes are strategically designed to suit our students.
+                    They are flexible, convenient and most importantly..they bring education right to your door step.
+                </p>
+                <button class="btn but1 mt-4 btn-outline-primary bg-danger"><a class="text-light" href="/base/create">Register Now</a></button>
+            </div>
+        </div>
+
+        <div class="container  my-5">
+            <h4 class="text-center">Students Review</h4><hr>
+        </div>
+        <div class="d-flex justify-content-around py-5">
+            <div class="stu1">
+                <!-- <img class="p2" src="/student1.jpg" alt=""> -->
+                <img class="p1" src="/student1.jpg" alt="">
+                <h5 class="text-light">"Learning here is really fun,<br> and the environment is highly condusive.."</h5>
+                <p class="text-center text-light">Sarah Woods</p>
+                <p class="lead text-light text-center">Software Dev. </p>
+            </div>
+            <div class="stu2">
+                <!-- <img class="p3" src="/student3.jpg" alt=""> -->
+                <img class="p5" src="/f5.jpg" alt="">
+                <h5 class="text-light" style="    margin-top: 48px;">"Lecture sessions are always interactive,<br>and the sytem here is project based.."</h5>
+                <p class="text-center text-light">Michel Stones</p>
+                <p class="text-center text-light lead">(Front End Dev)</p>
+            </div>
+        </div>         
+   </div>
+   <!-- box shadow hover -->
+   <article class="container">
+    <div>
+        <figure style="border-top: 5px solid red;">
+            <img class="icon1" src="/icon1.jpg" alt="">
+            <h4 style="margin-top: 50px;">Expert Instructor</h4>
+            <p>Our team of highly trained and well equipped tutors are always equal to the task.</p>
+        </figure>
+        <figure style="border-top: 5px solid blue;">
+            <img class="icon2" src="/icon3.jpg" alt="">
+            <h4 style="margin-top: 50px;">Online Courses</h4>
+            <p>we've got loads of online packages to suit your Schedule.</p>
+        </figure>
+        <figure style="border-top: 5px solid green;">
+            <img class="icon3" src="/icon2.jpg" alt="">
+            <h4 style="margin-top: 50px;">Lifetime Access</h4>
+            <p>our students and esteemed customers are always welcome to our community.</p>
+        </figure>
+        <figure style="border-top: 5px solid yellow;">
+            <img class="icon4" src="/certificate.jpg" alt="">
+            <h4 style="margin-top: 50px;">Certification</h4>
+            <p>intenationally recognised certificates are issued to students upon completion of course</p>
+        </figure>
+   </div>
+   </article>
+
+
+    <!-- <div class="base content">       
+   
+        <% if (datas.length > 0 ) { %>
+            <% datas.forEach(data => { %>               
+                <p><span>Fullname: </span><%= data.FULLNAME %></p>
+                <p><span>Email: </span><%= data.EMAIL %></p>
+                <p><span>Phone Number: </span><%= data.PHONE %></p>
+                <p><span>Registration Fee: </span><%= data.FEE %></p>
+                <p><span>Course: </span><%= data.COURSE %></p>
+                <p><span>Outstanding Payment: </span><%= data.OUTSTANDING %></p>             
+            <% }) %>
+        <% } else { %>
+            <p>There is no data on display....</p>
+        <% } %>
+    </div> -->
+
+    
+
+
+
+
+<div class="bg-dark text-white pt-5 pb-4">
+    <div class="container text-center text-md-left">
+        <div class="row text-center md-left">
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h4 class="mb-4 text-uppercase font-weight-bold text-warning">Soft App</h4>
+                <div class="d-flex">
+                    <i class="bi bi-geo-alt text-light"></i>
+                    <p class="text-light ms-3">We are located @ No 7 jabi road, by Alkali Road Kaduna, Nigeria</p>
+                </div>
+                <div class="d-flex">
+                    
+                </div>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-2">
+                <h4 class="text-uppercase mb-4 text-warning font-weight-bold">services</h4>
+                <ul>
+                    <a href="#" class="text-white text-decoration-none">Online schooling</a>
+                </ul>
+                <ul>
+                    <a href="#" class="text-white text-decoration-none">private tutorship</a>
+                </ul>
+                <ul>
+                    <a href="#" class="text-white text-decoration-none">gadget sales</a>
+                </ul>
+            </div>
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h4 class="text-uppercase mb-4 text-warning font-weight-bold">  our socials</h4>
+                <ul class="d-flex">
+                    <!-- <a href="#" class="text-white text-decoration-none">Facebook.com/DavidOla</a> -->
+                    <i class="bi bi-facebook text-light"></i>
+                    <p class="ms-3 text-light">Facebook.com/SoftApps</p>
+                    
+                </ul>
+                <ul class="d-flex">
+                    <!-- <a href="#" class="text-white text-decoration-none">Instagram.com/DavidOla017</a> -->
+                    <i class="bi bi-instagram text-light"></i>
+                    <p class="ms-3 text-light">Instagram@Soft_app017</p>
+                </ul>
+                <ul class="d-flex">
+                    <!-- <a href="#" class="text-white text-decoration-none">081 3971 2970</a> -->
+                    <i class="bi bi-whatsapp text-light"></i>
+                    <p class="ms-3 text-light">081 3971 2970</p>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- footer -->
+    <%- include('./partials/footer.ejs') %>   
+</body>
+</html>

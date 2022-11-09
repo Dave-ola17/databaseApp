@@ -1,0 +1,38 @@
+  <h2><%= data.FULLNAME %></h2>
+                <div class="content">
+                    <!-- <p><span>Fullname: </span><%= data.FULLNAME %></p> -->
+                    <p><span>Email: </span><%= data.EMAIL %></p>
+                    <p><span>Phone Number: </span><%= data.PHONE %></p>
+                    <p><span>Registration Fee: </span><%= data.FEE %></p>
+                    <p><span>Course: </span><%= data.COURSE %></p>
+                    <p><span>Outstanding Payment: </span><%= data.OUTSTANDING %></p>
+                </div>
+                <!-- <a href="" class="delete" data-doc="<% data._id %>">delete</a> -->
+
+
+                <!-- bla -->
+                <h2><%= data.FULLNAME %></h2>
+                <div class="content">
+                    <!-- <p><span>Fullname: </span><%= data.FULLNAME %></p> -->
+                    <p><span>Email: </span><%= data.EMAIL %></p>
+                    <p><span>Phone Number: </span><%= data.PHONE %></p>
+                    <p><span>Registration Fee: </span><%= data.FEE %></p>
+                    <p><span>Course: </span><%= data.COURSE %></p>
+                    <p><span>Outstanding Payment: </span><%= data.OUTSTANDING %></p>
+                </div>
+                <!-- <a href="" class="delete" data-doc="<% data._id %>">delete</a> -->
+   
+        <!-- <% if (datas.length > 0 ) { %>
+            <% datas.forEach(data => { %>
+              <a href="/datas/<%= data._id %>">
+                <p><span>Fullname: </span><%= data.FULLNAME %></p>
+                <p><span>Email: </span><%= data.EMAIL %></p>
+                <p><span>Phone Number: </span><%= data.PHONE %></p>
+                <p><span>Registration Fee: </span><%= data.FEE %></p>
+                <p><span>Course: </span><%= data.COURSE %></p>
+                <p><span>Outstanding Payment: </span><%= data.OUTSTANDING %></p>
+             </a>
+            <% }) %>
+        <% } else { %>
+            <p>There is no data on display....</p>
+        <% } %> -->

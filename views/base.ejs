@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- head -->
+    <%- include('./partials/head.ejs') %>   
+<body style="background-image:url(/001.jpg);
+        background-size: cover;
+        background-position: center ; 
+        background-attachment:fixed;
+        background-repeat: no-repeat;
+        ">
+    <!-- nav bar -->
+    <%- include('./partials/nav.ejs') %>   
+
+
+     <!-- <div class="create-base content">
+        <form class="" action="/datas" method="POST">
+            <label for="title">FULLNAME</label>
+            <input type="text" id="title" name="FULLNAME" required>
+            <label for="email">EMAIL</label>
+            <input type="text" id="email" name="EMAIL" required>
+            <label for="phone">PHONE</label>
+            <input type="number" id="phone" name="PHONE" required>
+            <label for="fee">REGISTRATION FEE</label>
+            <input type="number" id="fee" name="FEE" required>
+            <!-- <label for="bal">OUTSTANDING</label>
+            <input type="number" id="bal" name="OUTSTANDING" required> 
+            <button class="btn-outline-primary">Submit</button>
+        </form>         
+    </div> -->  
+
+    <div class="container create-base content">
+        <div class="row">
+            <div class="col-lg-3"></div>
+
+            <div class="col-lg-6">
+                <div id="ui">
+                    <form action="/datas" method="POST" class="form-group text-center">
+                        <h2 class="text-light">REGISTRATION DETAILS</h2>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <label for="title">FULLNAME:</label>
+                                <input type="text" id="title" name="FULLNAME"  required class="form-control">
+                            </div>
+
+                            <div class="col-lg-6">
+                                <label for="email">EMAIL:</label>
+                                <input type="email" id="email" name="EMAIL" required class="form-control">
+                            </div>                            
+                        </div>
+                        <br>
+
+                        <label for="phone">PHONE:</label>
+                        <input type="number" id="phone" name="PHONE" required class="form-control">
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <label for="fee">REGISTRATION FEE</label>
+                                <input type="number" id="fee" name="FEE" required class="form-control">
+                            </div>
+                            <div class="col-lg-6">
+                                <label for="course">COURSE</label>
+                                <input type="text" id="course" name="COURSE" required class="form-control">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="d-grid">
+                            <button class="btn btn-lg btn-outline-primary" type="submit" name="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-3"></div>
+        </div>
+    </div>
+
+
+    
+
+<!-- footer -->
+<%- include('./partials/footer.ejs') %>   
+</body>
+</html>
